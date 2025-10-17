@@ -350,8 +350,6 @@ br {
   content: ""; /* clears default height */
   padding-top: 8px; /* change this to whatever height you want it */
 }
-<<<<<<< HEAD
-=======
 
 /* ==================== RESPONSIVE DESIGN ==================== */
 
@@ -673,4 +671,3 @@ br {
     -moz-osx-font-smoothing: grayscale;
   }
 }
->>>>>>> c1f0bc5 (initial commit)
