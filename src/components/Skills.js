@@ -9,8 +9,8 @@ function Skills() {
 
       <div className='skills'>
         <div class="description">
-        <p>Languages: Python, Java, HTML, CSS, JavaScript</p>
-        <p>Developer Tools: GitHub, Pycharm</p>
+        <p>Languages: Python, Java, HTML, CSS, JavaScript, TypeScript, C, SQL</p>
+        <p>Developer Tools: GitHub, React.js, Next.js, Flask, Node.js, MongoDB, Docker, NumPy, Pandas</p>
         </div>
       </div>
     </div>

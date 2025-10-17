@@ -10,7 +10,7 @@ function Leadership() {
       <div className="leadership">
         <h3 class="title-name2">Student Engagement Student Advisory Committee</h3>
         <div class="line-container2">
-          <p class="location2">September 2023 – Current</p>
+          <p class="location2">September 2023 – April 2024</p>
           <p class="place">University of Toronto</p>
         </div>
         <div class="description">
