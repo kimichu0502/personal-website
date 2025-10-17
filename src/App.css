@@ -350,3 +350,327 @@ br {
   content: ""; /* clears default height */
   padding-top: 8px; /* change this to whatever height you want it */
 }
+<<<<<<< HEAD
+=======
+
+/* ==================== RESPONSIVE DESIGN ==================== */
+
+/* Large tablets and small desktops (1024px and down) */
+@media (max-width: 1024px) {
+  .hero-name {
+    font-size: 8rem;
+  }
+  
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-title h2,
+  .section-title2 h2 {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
+  .line-container {
+    padding-left: 140px;
+    padding-right: 140px;
+  }
+  
+  .line-container2 {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .title-name2 {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  
+  .description {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  
+  .main-page-background::before {
+    font-size: 8rem;
+    left: 45%;
+  }
+}
+
+/* Tablets (768px and down) */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 6rem;
+  }
+  
+  .hero-title {
+    font-size: 1.5rem;
+  }
+  
+  /* Navigation adjustments */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .navbar-name {
+    position: static;
+    order: -1;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 8px;
+  }
+  
+  nav ul li a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  /* Section adjustments */
+  section {
+    padding: 2rem 1rem;
+  }
+  
+  .section-title h2,
+  .section-title2 h2 {
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 1.8rem;
+  }
+  
+  .line-container {
+    padding-left: 80px;
+    padding-right: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .line-container2 {
+    padding-left: 80px;
+    padding-right: 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  .title-name2 {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+  }
+  
+  .description {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  
+  .main-page-background::before {
+    font-size: 6rem;
+    left: 50%;
+  }
+  
+  /* Footer adjustments */
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .footer-links li {
+    margin: 0 0.5rem;
+  }
+}
+
+/* Mobile devices (480px and down) */
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 4rem;
+  }
+  
+  .hero-title {
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation becomes more compact */
+  nav {
+    padding: 8px 0;
+  }
+  
+  nav ul {
+    gap: 5px;
+  }
+  
+  nav ul li {
+    margin: 0 4px;
+  }
+  
+  nav ul li a {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+  
+  .navbar-name a {
+    font-size: 16px;
+  }
+  
+  /* Section adjustments for mobile */
+  section {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .section-title h2,
+  .section-title2 h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .line-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .line-container2 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .title-name2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 8px;
+  }
+  
+  .description {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .main-page-background::before {
+    font-size: 4rem;
+    left: 50%;
+  }
+  
+  /* Footer mobile adjustments */
+  .footer-section {
+    padding: 1.5rem 0;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-links li {
+    margin: 0;
+  }
+  
+  .footer-links a {
+    font-size: 1rem;
+  }
+}
+
+/* Very small mobile devices (320px and down) */
+@media (max-width: 320px) {
+  .hero-name {
+    font-size: 3rem;
+  }
+  
+  .hero-title {
+    font-size: 1rem;
+  }
+  
+  nav ul li a {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+  
+  .navbar-name a {
+    font-size: 14px;
+  }
+  
+  .section-title h2,
+  .section-title2 h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.3rem;
+  }
+  
+  .line-container,
+  .line-container2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .title-name2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .description {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .main-page-background::before {
+    font-size: 3rem;
+  }
+}
+
+/* Additional responsive improvements */
+/* Ensure text doesn't overflow on small screens */
+@media (max-width: 768px) {
+  h2, h3, p {
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* Make sure links are touch-friendly */
+  nav ul li a,
+  .footer-links a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-name {
+    font-size: 5rem;
+  }
+  
+  .hero-title {
+    font-size: 1.3rem;
+  }
+  
+  #header {
+    height: 80vh;
+  }
+  
+  section {
+    padding: 1rem 0.5rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure crisp text rendering on high DPI displays */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+>>>>>>> c1f0bc5 (initial commit)
