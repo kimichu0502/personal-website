@@ -1,6 +1,30 @@
-# Getting Started with Create React App
+# Yi-An Chu - Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive personal portfolio website built with React, showcasing my education, skills, projects, and experience as a Computer Science student at University of Toronto.
+
+## Features
+
+- 📱 **Fully Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- 🎨 **Modern UI/UX** - Clean, professional design with custom styling
+- ⚡ **Fast Performance** - Built with React and optimized for production
+- 🔗 **Contact Integration** - Direct links to GitHub, LinkedIn, and Email
+
+## Sections
+
+- **Hero Section** - Introduction with name and title
+- **Education** - Academic background and achievements
+- **Skills** - Technical skills and programming languages
+- **Projects** - Personal and academic projects
+- **Experience** - Professional and leadership experience
+- **Leadership** - Leadership roles and activities
+- **Contact** - Links to social profiles and contact information
+
+## Technologies Used
+
+- React 18
+- CSS3 with Media Queries
+- Google Fonts (JetBrains Mono, Yellowtail)
+- Responsive Design Principles
 
 ## Available Scripts
 
