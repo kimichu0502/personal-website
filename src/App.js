@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
@@ -7,20 +7,39 @@ import Leadership from './components/Leadership';
 import './App.css';
 
   function App() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+      setIsMenuOpen(false);
+    };
+
     return (
       <div className="App">
         <div className="wrapper">
           <nav className="navbar">
-            <ul className="navbar-links">
-              <li className="navbar-name">
-                <a href="#header">Yi-An Chu</a> {/* Name on the top left */}
-              </li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#leadership">Leadership</a></li>
-            </ul>
+            <div className="navbar-container">
+              <div className="navbar-name">
+                <a href="#header" onClick={closeMenu}>Yi-An Chu</a>
+              </div>
+              
+              <div className="hamburger" onClick={toggleMenu}>
+                <span className={`hamburger-line ${isMenuOpen ? 'active' : ''}`}></span>
+                <span className={`hamburger-line ${isMenuOpen ? 'active' : ''}`}></span>
+                <span className={`hamburger-line ${isMenuOpen ? 'active' : ''}`}></span>
+              </div>
+              
+              <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
+                <li><a href="#education" onClick={closeMenu}>Education</a></li>
+                <li><a href="#skills" onClick={closeMenu}>Skills</a></li>
+                <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+                <li><a href="#experience" onClick={closeMenu}>Experience</a></li>
+                <li><a href="#leadership" onClick={closeMenu}>Leadership</a></li>
+              </ul>
+            </div>
           </nav>
 
           {/* Main Section with Background Grid and Faded Text */}
