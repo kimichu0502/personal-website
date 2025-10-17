@@ -457,29 +457,45 @@ br {
     font-size: 1.5rem;
   }
   
+  /* Compact mobile navbar */
+  nav {
+    padding: 5px 0;
+    height: 50px;
+  }
+  
+  .navbar-container {
+    height: 40px;
+    padding: 0 15px;
+  }
+  
   /* Navigation adjustments for mobile */
   .hamburger {
     display: flex;
     position: absolute;
-    right: 20px;
+    right: 15px;
+    padding: 5px;
   }
   
   .navbar-name {
     position: absolute;
-    left: 20px;
+    left: 15px;
+  }
+  
+  .navbar-name a {
+    font-size: 16px;
   }
   
   nav ul {
     position: fixed;
-    top: 70px;
+    top: 50px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 50px);
     background-color: #2c3e50;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     transition: left 0.3s ease;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
@@ -489,16 +505,16 @@ br {
   }
   
   nav ul li {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     width: 100%;
     text-align: center;
   }
   
   nav ul li a {
-    font-size: 18px;
-    padding: 15px 20px;
+    font-size: 16px;
+    padding: 12px 20px;
     width: 100%;
-    min-height: 50px;
+    min-height: 44px;
     border-radius: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
@@ -510,6 +526,11 @@ br {
   /* Section adjustments */
   section {
     padding: 2rem 1rem;
+  }
+  
+  /* Adjust header for smaller navbar */
+  #header {
+    padding-top: 50px;
   }
   
   .section-title h2,
@@ -572,37 +593,50 @@ br {
     font-size: 1.2rem;
   }
   
-  /* Navigation becomes more compact */
+  /* Ultra compact mobile navbar */
   nav {
-    padding: 8px 0;
+    padding: 3px 0;
+    height: 45px;
   }
   
   .navbar-container {
-    padding: 0 15px;
+    height: 35px;
+    padding: 0 12px;
   }
   
   .navbar-name {
     position: absolute;
-    left: 15px;
+    left: 12px;
   }
   
   .navbar-name a {
-    font-size: 16px;
+    font-size: 15px;
   }
   
   .hamburger {
     position: absolute;
-    right: 15px;
+    right: 12px;
+    padding: 3px;
+  }
+  
+  .hamburger-line {
+    width: 20px;
+    height: 2px;
   }
   
   nav ul {
-    top: 66px;
-    height: calc(100vh - 66px);
+    top: 45px;
+    height: calc(100vh - 45px);
   }
   
   nav ul li a {
-    font-size: 16px;
-    padding: 12px 20px;
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  
+  /* Adjust header for ultra compact navbar */
+  #header {
+    padding-top: 45px;
   }
   
   /* Section adjustments for mobile */
@@ -677,27 +711,49 @@ br {
     font-size: 1rem;
   }
   
+  /* Minimal mobile navbar */
+  nav {
+    height: 40px;
+  }
+  
   .navbar-container {
-    padding: 0 10px;
+    height: 30px;
+    padding: 0 8px;
   }
   
   .navbar-name {
     position: absolute;
-    left: 10px;
+    left: 8px;
   }
   
   .navbar-name a {
-    font-size: 14px;
+    font-size: 13px;
   }
   
   .hamburger {
     position: absolute;
-    right: 10px;
+    right: 8px;
+    padding: 2px;
+  }
+  
+  .hamburger-line {
+    width: 18px;
+    height: 2px;
+  }
+  
+  nav ul {
+    top: 40px;
+    height: calc(100vh - 40px);
   }
   
   nav ul li a {
     font-size: 14px;
-    padding: 10px 15px;
+    padding: 8px 12px;
+  }
+  
+  /* Adjust header for minimal navbar */
+  #header {
+    padding-top: 40px;
   }
   
   .section-title h2,
